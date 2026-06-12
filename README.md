@@ -23,7 +23,12 @@ Lade die Datei `quickline_bridge.php` auf einen PHP-fähigen Webserver hoch. Öf
 
 ```php
 define('HA_API_TOKEN', 'DEIN_FREI_WAEHLBARER_SICHERHEITS_TOKEN');
+define('QL_USER', 'DEIN_QUICKLINE_BENUTZERNAME');
+define('QL_PASS', 'DEIN_QUICKLINE_PASSWORT');
+define('QL_LINE_ID', 'DEINE_FESTNETZ_LINE_ID');
 ```
+*Hinweis:* Der Webserver benötigt Schreibrechte im entsprechenden Verzeichnis, um die Dateien ```quickline_cookie.txt``` und ```quickline_token.json``` für das Sitzungshandling erstellen zu können.
+
 ## 2. Integration in Home Assistant
 Die Brücke lässt sich über die ```configuration.yaml``` als REST-Sensor registrieren:
 ```yaml
