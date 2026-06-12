@@ -26,7 +26,7 @@ header('Content-Type: application/json; charset=utf-8');
 define('HA_API_TOKEN', 'YOUR_SECRET_BRIDGE_API_TOKEN'); // Frei wählbarer Token für die Absicherung dieser Bridge
 define('QL_USER', 'YOUR_QUICKLINE_USERNAME');           // Dein Quickline-Benutzername
 define('QL_PASS', 'YOUR_QUICKLINE_PASSWORD');           // Dein Quickline-Passwort
-define('QL_LINE_ID', 'YOUR_TELEPHONE_LINE_ID');         // Deine spezifische TelLineId von Quickline
+define('QL_LINE_ID', 'YOUR_TELEPHONE_LINE_ID');         // Deine spezifische TelLineId von Quickline. Zu finden im my.quickline.ch (Abos > Quickline Festnetz > Anrufliste, dann die URL https://my.quickline.ch/de/abos/festnetz/anrufliste?telLineId=XXXXX (XXXXX Ist deine LineID)
 
 define('QL_AUTHORIZE_URL', 'https://login.quickline.ch/Authorize/Index?response_type=login&client_id=ql_cockpit&redirect_uri=https://my.quickline.ch/de');
 define('QL_TOKEN_ENDPOINT', 'https://login-api.quickline.ch/V00/00/ManageToken/Token');
