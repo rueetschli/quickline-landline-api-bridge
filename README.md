@@ -27,7 +27,10 @@ define('QL_USER', 'DEIN_QUICKLINE_BENUTZERNAME');
 define('QL_PASS', 'DEIN_QUICKLINE_PASSWORT');
 define('QL_LINE_ID', 'DEINE_FESTNETZ_LINE_ID');
 ```
-*Hinweis:* Der Webserver benötigt Schreibrechte im entsprechenden Verzeichnis, um die Dateien ```quickline_cookie.txt``` und ```quickline_token.json``` für das Sitzungshandling erstellen zu können.
+
+*Hinweis zur Ermittlung der QL_LINE_ID: >* Die spezifische Leitungs-ID kann über das Quickline-Kundencenter ausgelesen werden. Melden Sie sich hierzu unter ```my.quickline.ch``` an und navigieren Sie über den Menüpfad ```Abos``` → ```Festnetz``` zur ```Anrufliste.``` Die benötigte ID befindet sich am Ende der Browser-Adresszeile als numerischer Wert des URL-Parameters telLineId (z. B. ```https://my.quickline.ch/.../anrufliste?telLineId=123456```).
+
+*Hinweis zu Schreibrechten:* Der Webserver benötigt Schreibrechte im entsprechenden Verzeichnis, um die Dateien ```quickline_cookie.txt``` und ```quickline_token.json``` für das Sitzungshandling erstellen zu können.
 
 ## 2. Integration in Home Assistant
 Die Brücke lässt sich über die ```configuration.yaml``` als REST-Sensor registrieren:
