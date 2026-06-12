@@ -25,6 +25,7 @@ Lade die Datei `quickline_bridge.php` auf einen PHP-fähigen Webserver hoch. Öf
 define('HA_API_TOKEN', 'DEIN_FREI_WAEHLBARER_SICHERHEITS_TOKEN');
 ```
 ## 2. Integration in Home Assistant
+Die Brücke lässt sich über die ```configuration.yaml``` als REST-Sensor registrieren:
 ```yaml
 sensor:
   - platform: rest
